@@ -1,0 +1,62 @@
+HTML::Munger - Module which simplifies the creation of web filters.
+
+Copyright
+=========
+
+Copyright (c) 1997-2000 J. David Lowe.  All rights reserved.  This program is
+free software; you can redistribute it and/or modify it under the same terms
+as Perl itself. 
+
+
+Description
+===========
+
+HTML::Munger is a simple module which allows easy creation of web page
+filtering software, such as those listed here:
+
+http://dir.yahoo.com/Entertainment/Humor/By_Topic/Computers_and_Internet/Filters/Web_Based/
+
+It was first written to build the pootifier:
+
+http://pootpoot.com/?pootify
+
+The main task which this module performs is attempting to make all the
+relative links on the filtered page absolute, so that images, and hyperlinks
+work correctly.  It also makes frames and hyperlinks properly filter back
+through the filter.
+
+This leaves two major tasks for the user of HTML::Munger: fetching the
+original page, and building a simple munging function.
+
+
+Prerequisites
+=============
+
+You'll need Perl and the HTML::Parser module.
+
+
+Building
+========
+
+  # perl Makefile.PL
+  # make
+
+
+Installing
+==========
+
+  # make test
+  # make install
+
+
+Additional Information
+======================
+
+If you're using this module, let me know!  It's always fascinating to hear
+what uses people have found for it.
+
+There is a web page for HTML::Munger at http://pootpoot.com/~dlowe/HTML-Munger/
+The latest version can always be found there.
+
+You can contact me directly at dlowe@pootpoot.com.  I'm happy to answer any
+questions you might have.
